@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">libamoswifi</string>
+    <string name="bell_tips">请长按设置按钮5秒钟，听到语音提示后点击下一步进行操作！</string>
+    <string name="device_id">设备ID:</string>
+    <string name="wifi_ssid">WIFI-SSID:</string>
+    <string name="wifi_pwd">WIFI密码:</string>
+    <string name="next">下一步</string>
+    <string name="sure">确定</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="wait_moment">Loading, please wait.</string>
+    <string name="wifi_serch">Serch</string>
+    <string name="wifi_not_connect">Disconnect</string>
+    <string name="wifi_did_connect">WiFi Connnect Success</string>
+</resources>
