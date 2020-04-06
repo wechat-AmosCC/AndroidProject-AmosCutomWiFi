@@ -2,7 +2,7 @@
 ## Android下自定义的WiFi搜索功能 ##
 
 
-### DateType
+### AmosCustomWiFi
 
 - WiFiType--1没有密码;2用wep加密;3用wpa加密
 - isWindows--是否为窗口模式
@@ -30,7 +30,10 @@
 
  -  **Add the dependency**
 ```sh
-	implementation 'com.github.wechat-AmosCC:AndroidProject-PickTime:1.1'
+	 implementation 'com.github.wechat-AmosCC:AndroidProject-AmosCutomWiFi:1.0'
+	
+
+
 ```
 
  -  **java**

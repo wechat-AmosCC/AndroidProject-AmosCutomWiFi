@@ -30,25 +30,32 @@
 
  -  **Add the dependency**
 ```sh
-	implementation 'com.github.wechat-AmosCC:AndroidProject-PickTime:1.1'
+	 implementation 'com.github.wechat-AmosCC:AndroidProject-AmosCutomWiFi:1.0'
+	
+
+
 ```
 
  -  **java**
 ```java
-        DatePickDialog dialog = new DatePickDialog(this);
-        //设置上下年分限制
-        dialog.setYearLimt(5);
-        //设置标题
-        dialog.setTitle("选择时间");
-        //设置类型
-        dialog.setType(DateType.TYPE_ALL);
-        //设置消息体的显示格式，日期格式
-        dialog.setMessageFormat("yyyy-MM-dd HH:mm");
-        //设置选择回调
-        dialog.setOnChangeLisener(null);
-        //设置点击确定按钮回调
-        dialog.setOnSureLisener(null);
-        dialog.show();
+        Intent starter = new Intent(MainActivity.this, AmosWiFiView.class);
+                //指定WiFiType   1没有密码;2用wep加密;3用wpa加密
+                starter.putExtra("wifiType",2);
+                //设置为窗口模式
+                starter.putExtra("isWindows",true);
+                //设置高度为原高度的0.6
+                starter.putExtra("z_height",0.6);
+                //设置宽度为原宽度的0.6
+                starter.putExtra("z_width",0.8);
+                //只搜索SSID中包含CEM的WIFI  不设置则搜索所有的设备
+                starter.putExtra("selectWifiSSID","CEM");
+                //设置相关文字，如不设置则为默认文字
+                starter.putExtra("str_Con_Success","连接成功");
+                starter.putExtra("str_Con_Failed","连接失败");
+                starter.putExtra("str_Loading","加载中");
+                //设置搜索框文字
+                starter.putExtra("str_Search","搜索WiFi");
+                startActivity(starter);
 ```
 
 
